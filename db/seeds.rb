@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create(token: 12345)
+
+5.times do |i|
+  Task.create(user_id: 1, name: "サンプルタスク #{i}", description: "サンプルテスト #{i}")
+end
